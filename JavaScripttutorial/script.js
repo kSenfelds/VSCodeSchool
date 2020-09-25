@@ -5,7 +5,9 @@ message();
 function message(m) {
     console.log(x);
 }
-
+button.addEventListener("click", function()){
+    alert(); /* uztaisīt tā lai klikšķinot skaitlis palielinās par 1*/
+}
 let output = document.getElementById("output");
 
 console.log(output);
