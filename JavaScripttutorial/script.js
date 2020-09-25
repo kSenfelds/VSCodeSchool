@@ -19,5 +19,8 @@ function addButton(i) {
     if (i < 42) {
         addButton(i);
     }
+    if (i%3==0) {
+        button.style.background="green";
+    }
     
 }
