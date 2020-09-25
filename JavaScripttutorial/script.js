@@ -1,0 +1,23 @@
+console.log("second file");
+
+let x =123;
+message();
+function message(m) {
+    console.log(x);
+}
+
+let output = document.getElementById("output");
+
+console.log(output);
+addButton(0);
+function addButton(i) {
+    i = i + 1;
+    let button = document.createElement("button");
+    button.textContent = "BUTTON".concat(i);
+    output.append(button);
+
+    if (i < 42) {
+        addButton(i);
+    }
+    
+}
