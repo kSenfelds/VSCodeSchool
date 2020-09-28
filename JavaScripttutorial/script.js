@@ -5,9 +5,8 @@ message();
 function message(m) {
     console.log(x);
 }
-button.addEventListener("click", function()){
-    alert(); /* uztaisīt tā lai klikšķinot skaitlis palielinās par 1*/
-}
+
+
 let output = document.getElementById("output");
 
 console.log(output);
@@ -23,6 +22,12 @@ function addButton(i) {
     }
     if (i%3==0) {
         button.style.background="green";
+        button.addEventListener("click", function (){alert(button.textContent = "BUTTON".concat(i+1));})
+        
     }
-    
+
 }
+
+ 
+    /* zaļām pogām uztaisīt tā lai klikšķinot skaitlis palielinās par 1*/
+        
