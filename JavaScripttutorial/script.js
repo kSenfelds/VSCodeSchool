@@ -27,6 +27,13 @@ function addButton(i) {
     }
 
 }
+    let pluss = document.getElementById("pluss");
+    let button2 = document.createElement("button");
+    pluss.append(button2);
+    button2.textContent = "+";
+    let j = 42;
+    button2.addEventListener("click", function (){addButton(j); j++;})
+    
 
  
     /* zaļām pogām uztaisīt tā lai klikšķinot skaitlis palielinās par 1*/
