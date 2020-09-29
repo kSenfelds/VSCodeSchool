@@ -16,7 +16,7 @@ function addButton(i) {
     let button = document.createElement("button");
     button.textContent = "BUTTON".concat(i);
     output.append(button);
-    button.setAttribute("data-number", i);
+    button.id= "button-"+i;
 
     if (i < 42) {
         addButton(i);
@@ -39,15 +39,13 @@ function addButton(i) {
     let button3 = document.createElement("button");
     minus.append (button3);
     button3.textContent = "-";
-    button3.addEventListener("click", function (){removeButton(j);})
+    button3.addEventListener("click", function (){removeButton(j); j--;})
     
     function removeButton (j) {
-       
-       output.removeChild(j);
-       j--;
+       document.getElementById("button-"+j).remove();
     }
 
-    
+
  
     /* zaļām pogām uztaisīt tā lai klikšķinot skaitlis palielinās par 1*/
         
