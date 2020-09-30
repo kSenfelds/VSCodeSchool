@@ -81,34 +81,36 @@ document.getElementById("clear-button").addEventListener("click", function () {
 document.getElementById("winner").addEventListener("click", 
     function () {
         var moves = new Array (9);
+        let text = "No winner!"
         for (i=0; i<moves.length; i++)
         {
             moves[i]= document.getElementById("button-"+i).textContent;
         }
         if (((moves[0]=="X")&&(moves[1]=="X")&&(moves[2]=="X"))||((moves[3]=="X")&&(moves[4]=="X")&&(moves[5]=="X"))||((moves[6]=="X")&&(moves[7]=="X")&&(moves[8]=="X")))
         {
-            document.getElementById("winner").textContent="Winner X !";
+           text = "Winner X !";
         }
         if (((moves[0]=="O")&&(moves[1]=="O")&&(moves[2]=="O"))||((moves[3]=="O")&&(moves[4]=="O")&&(moves[5]=="O"))||((moves[6]=="O")&&(moves[7]=="O")&&(moves[8]=="O")))
         {
-            document.getElementById("winner").textContent="Winner O !";
+            text = "Winner O !";
         }
         if (((moves[0]=="X")&&(moves[3]=="X")&&(moves[6]=="X"))||((moves[1]=="X")&&(moves[4]=="X")&&(moves[7]=="X"))||((moves[2]=="X")&&(moves[5]=="X")&&(moves[8]=="X")))
         {
-            document.getElementById("winner").textContent="Winner X !";
+            text = "Winner X !";
         }
         if (((moves[0]=="O")&&(moves[3]=="O")&&(moves[6]=="O"))||((moves[1]=="O")&&(moves[4]=="O")&&(moves[7]=="O"))||((moves[2]=="O")&&(moves[5]=="O")&&(moves[8]=="O")))
         {
-            document.getElementById("winner").textContent="Winner X !";
+            text = "Winner X !";
         }
         if (((moves[0]=="X")&&(moves[4]=="X")&&(moves[8]=="X"))||((moves[2]=="X")&&(moves[4]=="X")&&(moves[6]=="X")))
         {
-            document.getElementById("winner").textContent="Winner X !";
+            text = "Winner X !";
         }
         if (((moves[0]=="O")&&(moves[4]=="O")&&(moves[8]=="O"))||((moves[2]=="O")&&(moves[4]=="O")&&(moves[6]=="O")))
         {
-            document.getElementById("winner").textContent="Winner O !";
+            text="Winner O !";
         }
-        else { document.getElementById("winner").textContent="NO WINNER!";}
+        
+        document.getElementById("winner").textContent=text;
         
     })
