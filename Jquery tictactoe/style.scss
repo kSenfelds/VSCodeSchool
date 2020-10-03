@@ -1,0 +1,22 @@
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /*
+    #tic-tac-toe button:first-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    */
+  @media only screen and (max-width: 600px) {
+    #tic-tac-toe {
+      height: 1vw;
+      width: 100%;
+    }
+  }
+   
